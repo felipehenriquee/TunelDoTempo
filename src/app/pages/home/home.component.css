@@ -13,9 +13,10 @@ img{
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
-    font-family: 'fontelibre';
+    font-family: 'fontelibrebold'
+    
 }
-.tituloPagina h3{
+.tituloPagina h2{
     text-transform: uppercase;
 }
 .btnAtualizar{

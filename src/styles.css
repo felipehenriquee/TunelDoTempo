@@ -5,6 +5,10 @@
     font-family: fontelibre;
     src: url("./assets/fonte/libre.ttf") format("truetype");
 }
+@font-face {
+    font-family: fontelibrebold;
+    src: url("./assets/fonte/libreBold.ttf") format("truetype");
+}
 body{
     background-color: rgb(241, 241, 241);
 }
