@@ -8,15 +8,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./individual.component.css']
 })
 export class IndividualComponent implements OnInit {
-  mostraInfo = true;
-  obj:any = null;
-  objId: number = 0;
-  constructor(private objeto: ItensService, private route: ActivatedRoute) { }
+  listaObjetos:any = ["./assets/gif/facebook.gif", "./assets/gif/twitter.gif", "./assets/gif/google.gif","./assets/gif/youtube.gif"];
+  listaNomeObjetos:any = ["facebook", "twitter", "google","youtube"];
+  escolhido = "";
+  tituloEscolhido = "";
+  constructor(private objetos: ItensService) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params =>  
-      this.obj = this.objeto.getObjetosId(params['id'])
-      );
+    const numeroEscolhido = Math.floor(Math.random() * 4 + 1) - 1;
+    this.escolhido = this.listaObjetos[numeroEscolhido];
+    this.tituloEscolhido = this.listaNomeObjetos[numeroEscolhido]
+  }
+
+  atualizarPagina(){
+    window.location.reload();
   }
 
 }
