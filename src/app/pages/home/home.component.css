@@ -1,0 +1,11 @@
+/* ed1c24 vermelho 0c4da2 azul */
+.background{
+    height: 100vh;
+}
+img{
+    width: 100%;
+}
+/* pc */
+@media screen and (min-width: 768px) {
+    
+}
