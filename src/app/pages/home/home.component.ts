@@ -18,6 +18,8 @@ export class HomeComponent implements OnInit {
     this.escolhido = this.listaObjetos[numeroEscolhido];
     this.tituloEscolhido = this.listaNomeObjetos[numeroEscolhido]
   }
- 
+  atualizarPagina(){
+    window.location.reload();
+  }
 
 }
